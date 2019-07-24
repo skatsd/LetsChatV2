@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/materialdesign_blue"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/phoneinhand"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center_horizontal"
+            />
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number:"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:textSize="25sp"
+        android:background="@drawable/border"
+        android:text="+91"
+        android:inputType="phone"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:text="Send Verification Code"
+        android:textSize="15sp"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="20dp"
+        android:id="@+id/verify"
+
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:backgroundTint="@color/dark_cyan"
+        />
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Code"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/code"
+        android:textSize="40sp"
+        android:background="@drawable/border"
+        android:inputType="number"/>
+
+
+
+
+</LinearLayout>

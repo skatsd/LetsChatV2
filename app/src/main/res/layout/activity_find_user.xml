@@ -4,16 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindUserActivity">
+    android:orientation="vertical"
+    tools:context=".FindUserActivity"
+    android:padding="15dp">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create"
+        android:text="Create Chat Room"
+        android:background="@color/cadet_blue"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/userList"
-        android:scrollbars="vertical">
+        android:scrollbars="vertical"
+        >
 
-
-
+        
     </android.support.v7.widget.RecyclerView>
 
 
